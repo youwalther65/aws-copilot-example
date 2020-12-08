@@ -1,11 +1,6 @@
 services:
   nginx:
-    image: 618668373247.dkr.ecr.eu-central-1.amazonaws.com/nyan-cat
+    build: .
+#    image: 618668373247.dkr.ecr.eu-central-1.amazonaws.com/nyan-cat
     ports:
     - "80:80"
-
-  nginx2:
-    image: 618668373247.dkr.ecr.eu-central-1.amazonaws.com/nyan-cat
-    ports:
-    - target: 8080
-      x-aws-protocol: http
